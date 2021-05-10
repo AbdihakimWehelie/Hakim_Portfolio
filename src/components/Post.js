@@ -33,10 +33,8 @@ export default function Post(){
       setErrorMessage('');
     }, function(error) {
       console.log('FAILED...', error);
-      setErrorMessage(error);
-	  console.log(errorMessage.text);
-      console.log(process.env.REACT_APP_NOT_TEMPLATE);
-      console.log(process.env.REACT_APP_NOT_SECRET_CODE);
+      alert("Sorry. Your message could not be sent);
+	  
     });
 }
 
