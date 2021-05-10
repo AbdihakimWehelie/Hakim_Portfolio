@@ -33,7 +33,7 @@ export default function Post(){
       setErrorMessage('')
     }, function(error) {
       console.log('FAILED...', error);
-      setErrorMessage(e.message);
+      setErrorMessage(error);
       console.log(process.env.REACT_APP_NOT_TEMPLATE);
       console.log(process.env.REACT_APP_NOT_SECRET_CODE);
     });
