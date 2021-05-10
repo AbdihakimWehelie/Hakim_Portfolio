@@ -1,0 +1,77 @@
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
+
+@media(max-width:600px){
+    nav{
+      grid-auto-flow: row;
+    }
+}
+
+body{
+    background-color: #320a8f;
+
+}
+
+li{
+  list-style-type: none;
+}
+
+ul{
+  border: 5px soild #FBBF24;
+}
+
+
+
+footer{
+  position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
+input {
+  width: 600px;
+}
+
+textarea {
+  height: 10em;
+  width: 600px;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #320a8f;
+}
+
+textarea{
+  max-width: 800px;
+}
+
+
+.entry{
+    font-family: 'Orelega One', cursive;
+    font-weight: 500;
+}
+
+
+.prose img{
+  margin: auto;
+  border-radius: 5px;
+}
+
+
+.home-name{
+    font-size: 150;
+}
+
+.active{
+  background-color: #1d0469;
+  color: red;
+  border-radius: 10px;
+}
