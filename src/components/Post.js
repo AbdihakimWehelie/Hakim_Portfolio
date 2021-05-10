@@ -30,7 +30,7 @@ export default function Post(){
     .then(function(response) {
       alert("Your email has been sent");
       console.log('SUCCESS!', response.status, response.text);
-      setErrorMessage('')
+      setErrorMessage('');
     }, function(error) {
       console.log('FAILED...', error);
       setErrorMessage(error);
@@ -44,6 +44,7 @@ export default function Post(){
   return(
       <FadeIn>
       <h3 style={{fontFamily:"Paprika"}} className="text-lg  text-yellow-500 font-blog flex justify-center mb-12">If you have something you want to ask me, send me an email.</h3>
+	  <h1>{errorMessage}</h1>
       <form id='contact-form' class="bg-#320a8f rounded px-8 my-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(onSubmit)}>
         <input type='hidden' name='contact_number' value={contactNumber} />
         <input {...register("name")} name='user_name' type='text'  placeholder='Name' class="shadow my-3 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required/>
@@ -53,9 +54,6 @@ export default function Post(){
         <textarea {...register("message")} name='message' placeholder='Message'class="shadow my-3 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"required/>
         <br/>
         <input type='submit' value='Send' class="bg-blue-400 hover:bg-yellow-400 text-yellow-300 hover:text-blue-500 font-bold py-2 px-4 rounded w-auto"/>
-			<div>
-                {errorMessage}
-              </div>
       </form>
       </FadeIn>
   )
