@@ -13,7 +13,7 @@ init(process.env.REACT_APP_NOT_SECRET_CODE)
 export default function Post(){
 
   const [contactNumber, setContactNumber] = useState("000000");
-  const [errorMessage, setErrorMessage]=useState('');
+  
 
 
 
