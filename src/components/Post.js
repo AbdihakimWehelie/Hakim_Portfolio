@@ -33,7 +33,7 @@ export default function Post(){
       setErrorMessage('');
     }, function(error) {
       console.log('FAILED...', error);
-      alert("Sorry. Your message could not be sent);
+      alert("Sorry. Your message could not be sent");
 	  
     });
 }
