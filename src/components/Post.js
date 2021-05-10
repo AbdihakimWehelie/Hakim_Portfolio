@@ -53,10 +53,10 @@ export default function Post(){
         <textarea {...register("message")} name='message' placeholder='Message'class="shadow my-3 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"required/>
         <br/>
         <input type='submit' value='Send' class="bg-blue-400 hover:bg-yellow-400 text-yellow-300 hover:text-blue-500 font-bold py-2 px-4 rounded w-auto"/>
-      </form>
-            <div>
+			<div>
                 {errorMessage}
               </div>
+      </form>
       </FadeIn>
   )
 }
