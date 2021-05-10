@@ -1,6 +1,21 @@
 # Getting Started with Create React App
 
+
+
+![alt text](https://i.ibb.co/5Lsp7Yc/portfolio.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technolgies used
+
+* HTML
+* CSS
+* Javascript
+* React
+* React_Router
+* Vercel Hosting
+* MailJS
 
 ## Available Scripts
 
