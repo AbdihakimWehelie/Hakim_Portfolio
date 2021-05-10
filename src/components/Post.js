@@ -13,7 +13,7 @@ init(process.env.REACT_APP_NOT_SECRET_CODE)
 export default function Post(){
 
   const [contactNumber, setContactNumber] = useState("000000");
-
+  const [errorMessage, setErrorMessage]=useState('');
 
 
 
@@ -30,8 +30,10 @@ export default function Post(){
     .then(function(response) {
       alert("Your email has been sent");
       console.log('SUCCESS!', response.status, response.text);
+      setErrorMessage('')
     }, function(error) {
       console.log('FAILED...', error);
+      setErrorMessage(e.message);
       console.log(process.env.REACT_APP_NOT_TEMPLATE);
       console.log(process.env.REACT_APP_NOT_SECRET_CODE);
     });
@@ -52,6 +54,9 @@ export default function Post(){
         <br/>
         <input type='submit' value='Send' class="bg-blue-400 hover:bg-yellow-400 text-yellow-300 hover:text-blue-500 font-bold py-2 px-4 rounded w-auto"/>
       </form>
+            <div>
+                {errorMessage}
+              </div>
       </FadeIn>
   )
 }
