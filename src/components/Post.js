@@ -5,7 +5,7 @@ import FadeIn from 'react-fade-in';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
 
-//init("user_DN91ZUTD2IEoZEKQBOjdD");
+
 
 init(process.env.REACT_APP_NOT_SECRET_CODE)
 
