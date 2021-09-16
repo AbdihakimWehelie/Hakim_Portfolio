@@ -3,7 +3,7 @@ import sanityClient from "../client.js";
 import background from "./background.jpg";
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
-import pdf from '../media/Abdihakim_Wehelie_Junior_front_end_developer_resume_converted.pdf';
+import pdf from '../media/Abdihakim_Wehelie_Junior_front_end_developer_resume_.pdf';
 import FadeIn from 'react-fade-in';
 
 const builder = imageUrlBuilder(sanityClient);
